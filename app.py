@@ -20,10 +20,9 @@ def funzione_inutile():
 
 def calcola_media(valori):
     totale = 0
-    contatore = 0
     for v in valori:
         totale += v
     try:
         return totale / len(valori)
-    except:
+    except ZeroDivisionError:
         return None
