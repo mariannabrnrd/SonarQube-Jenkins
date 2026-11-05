@@ -10,12 +10,11 @@ def esegui_comando(cmd):
 def dividi(a, b):
     try:
         return a / b
-    except:
-        pass
+    except ZeroDivisionError:
+        return None
 
 
 def funzione_inutile():
-    x = 10
     return 5
 
 def calcola_media(valori):
@@ -26,3 +25,8 @@ def calcola_media(valori):
         return totale / len(valori)
     except ZeroDivisionError:
         return None
+
+
+
+
+
